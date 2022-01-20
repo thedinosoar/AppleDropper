@@ -15,8 +15,8 @@ public class Basket : MonoBehaviour
     //private Transform leftArrow;
     //[SerializeField]
     //private Transform rightArrow;
-  // Start is called before the first frame update
-  void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         center = spawner.transform.position - Vector3.up * spawner.transform.position.y;
     }
@@ -48,17 +48,18 @@ public class Basket : MonoBehaviour
 
         //if (leftDistance < rightDistance)
         //{
-        //    leftArrow.localScale = Vector3.one * Mathf.Clamp(Mathf.Pow(leftDistance+.5f,2), 5, 35);
+        //    leftArrow.localScale = Vector3.one * Mathf.Clamp(Mathf.Pow(leftDistance + .5f, 2), 5, 35);
         //    rightArrow.localScale = Vector3.zero;
         //}
         //else
         //{
-        //    rightArrow.localScale = Vector3.one * Mathf.Clamp(Mathf.Pow(rightDistance+.5f, 2), 5, 35);
+        //    rightArrow.localScale = Vector3.one * Mathf.Clamp(Mathf.Pow(rightDistance + .5f, 2), 5, 35);
         //    leftArrow.localScale = Vector3.zero;
         //}
 
 
-
+        //Debug.DrawLine(leftArrow.position, nearestApple);
+        //Debug.DrawLine(rightArrow.position, nearestApple);
         //var forwardMovement = Input.GetAxis("Vertical");
         transform.LookAt(spawner.transform.position-Vector3.up*spawner.transform.position.y+ Vector3.up *transform.position.y);
         
